@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+    <div class="container">
+        <h2>Your BMI is {{ bmi }}</h2>
+        <h3>Category: {{ category }}</h3>
+        {% if category == "Overweight" or category == "Obese" %}
+            <a href="/diet"><button>View Diet Plan</button></a>
+        {% endif %}
+    </div>
+</body>
+</html>

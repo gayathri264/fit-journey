@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+    <div class="container">
+        <h2>Your Diet Plan</h2>
+        {% for meal, item in meals.items() %}
+            <p><strong>{{ meal }}:</strong> {{ item }}</p>
+        {% endfor %}
+    </div>
+</body>
+</html>

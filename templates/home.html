@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+    <div class="container">
+        <h1>Welcome, {{ name }}</h1>
+        <form action="/calculate" method="POST">
+            <input name="weight" placeholder="Weight (kg)" required><br>
+            <input name="height" placeholder="Height (cm)" required><br>
+            <button type="submit">Calculate BMI</button>
+        </form>
+    </div>
+</body>
+</html>
